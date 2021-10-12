@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="ae5e7dfaeb26dff61715205ae2f84f1236de2ac4" author="(MHEGGE)-Generated" failOnError="false"    >
+	<changeSet id="c7e3ba4e5f8d4191e4b1e8d9fa68c57305c31056" author="(MHEGGE)-Generated" failOnError="false"    >
 		<n0:createSxmlObject objectName="TAB2" objectType="TABLE" ownerName="MHEGGE"   >
 			<n0:source><![CDATA[
   <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
@@ -21,6 +21,10 @@
             <NAME>DESCRIPTION</NAME>
             <DATATYPE>VARCHAR2</DATATYPE>
             <LENGTH>50</LENGTH>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>CREATE_DATE</NAME>
+            <DATATYPE>DATE</DATATYPE>
          </COL_LIST_ITEM>
       </COL_LIST>
       <PRIMARY_KEY_CONSTRAINT_LIST>
