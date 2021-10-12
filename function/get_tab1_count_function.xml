@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="c3eb39c14f9762d7ac5c37484877157cd3d2df6d" author="(MHEGGE)-Generated" failOnError="false"    >
+		<n0:createOracleFunction objectName="GET_TAB1_COUNT" objectType="FUNCTION" ownerName="MHEGGE"   >
+			<n0:source><![CDATA[
+  CREATE OR REPLACE EDITIONABLE FUNCTION "MHEGGE"."GET_TAB1_COUNT" RETURN NUMBER AS
+  l_count  NUMBER;
+BEGIN
+  SELECT COUNT(*)
+  INTO   l_count
+  FROM   tab1;
+
+  RETURN l_count;
+END;
+]]></n0:source>
+		</n0:createOracleFunction>
+	</changeSet>
+</databaseChangeLog>
